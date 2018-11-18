@@ -14,18 +14,16 @@ input_int_2 = int(input())
 max_answer = 0
 min_answer = 0
 for x in range(input_int_1, input_int_2+1):
-    if identify_prime(x) == False:
-        print(-1)
-    elif identify_prime(x) == True:
+    if identify_prime(x) == True:
         max_answer += x
         continue
-    print(max_answer)
+print(max_answer)
 
 for x in range(input_int_1, input_int_2+1):
     if identify_prime(x) == True:
         min_answer += x
         break
-    print(min_answer)
+print(min_answer)
 
 
 
